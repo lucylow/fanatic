@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans);
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-size: 13px;
+}
+
+aside {
+  padding: 0 1em;
+}
+
+aside div {
+  margin: .25em 0;
+}
+
+input {
+  margin-right: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  margin-bottom: 5em;
+}
+
+.player {
+  margin: 2em 0;
+}
+
+.player h3 {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 11.5px;
+  overflow-x: visible;
+}
+
+body {
+  background-color: #e5e7e9;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+  line-height: 15px;
+  color: #0a0a0a;
+}
+
+.team_profile {
+  margin: 0;
+  padding: 0;
+}
+
+.nba-detail-header-wrapper.row.expanded {
+  margin: 0;
+}
+
+.team_profile .nba-detail-header-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nba-detail-header-wrapper.team-lal-lakers {
+  background-color: #fdba33;
+  background: linear-gradient(to bottom, #fdba33 0%, #fdba33 38%, #0b1a36 100%);
+}
+
+.row.expanded {
+  max-width: none;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section {
+  display: block;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.nba-team-header .nba-detail-header__team-logo.team-header-logo {
+  top: 35px;
+  left: 20px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: -70px;
+  background-repeat: no-repeat;
+}
+
+.nba-detail-header-wrapper.team-lal-lakers .nba-detail-header__team-logo {
+  background-image: url("https://raw.githubusercontent.com/lucylow/fanatic/main/images/fanatic.png");
+}
+
+.nba-team-header .nba-detail-header__team-logo {
+  text-indent: 9999px;
+  display: inline-block;
+  background-size: 75%;
+}
+
+.nba-detail-header-wrapper .nba-detail-header__team-logo {
+  margin: 0 6px 0 0;
+}
+
+.nba-detail-header-wrapper .nba-detail-header-container {
+  padding: 50px 0 0 0;
+  display: flex;
+  z-index: 1;
+}
+
+.small-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.large-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+header {
+  display: block;
+}
+
+.nba-team-header__city-name {
+  margin-top: -150px;
+  font-size: 35px;
+  margin-left: 200px;
+  font-family: sans-serif;
+  line-height: 100%;
+}
+
+.nba-detail-header-wrapper p {
+  margin: 0;
+}
+
+.nba-team-header__team-name {
+  font-family: sans-serif;
+  font-size: 55px;
+  margin-left: 200px;
+  line-height: 100%;
+}
+
+.nba-detail-header-wrapper.team-lal-lakers::after {
+  content: "";
+  background: url("https://raw.githubusercontent.com/lucylow/fanatic/main/images/Screen%20Shot%202021-08-24%20at%202.51.24%20AM.png") center center/100% no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.team_info_stats {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0;
+  background: #0b153c;
+  color: #fff;
+  font-family: sans-serif;
+  border-top: 2px solid #66737c;
+  max-width: 100%;
+}
+
+.team_info_stats .team_info_stats_container {
+  margin: auto;
+  flex-wrap: nowrap;
+  display: flex;
+  width: 100%;
+}
+
+.team_info_stats .team_info_stats_container .stats_container {
+  width: 100%;
+  max-width: 1100px;
+  overflow: visible;
+  flex: 1 0 500px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.team_info_stats .pg_stat {
+  flex: 1 1 70px;
+  min-width: 70px;
+  display: block;
+}
+
+.team_info_stats .pg_stat .team_stat {
+  padding: 0 15%;
+}
+
+.team_info_stats .team_stat {
+  font-size: 11px;
+  border-right: 1px solid #66737c;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+.team_info_stats .team_stat abbr {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.team_info_stats .team_stat span {
+  font-size: 23px;
+  white-space: nowrap;
+  display: block;
+  line-height: 100%;
+}
+
+.team_info_stats .streak {
+  order: 0;
+  max-width: 120px;
+}
+
+.team_info_stats .pg_stat, .team_info_stats .streak {
+  flex: 1 1 70px;
+  min-width: 70px;
+}
+
+.team_info_stats .pg_stat .team_stat, .team_info_stats .streak .team_stat {
+  padding: 0 15%;
+}
+
+.team_info_stats .streak .team_stat {
+  border: none;
+}
+
+.team_info_stats .streak .team_stat span {
+  font-size: 28px;
+  line-height: 100%;
+  white-space: nowrap;
+  display: block;
+}
+
+.team_info_stats .games_played {
+  order: 0;
+  min-width: 150px;
+  flex: 0 1 150px;
+}
+
+.team_info_stats .games_played .team_stat {
+  padding: 3px 20px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  border-left: 1px solid #66737C;
+}
+
+.team_info_stats .games_played .team_stat .location {
+  margin-right: 20px;
+}
+
+.team_info_stats .games_played .team_stat span {
+  font-size: 11px;
+  display: inline-block;
+}
+
+.team_info_stats .team_stats span {
+  white-space: nowrap;
+  line-height: 100%;
+}
+
+.team_info_stats .games_played .team_stat:nth-child(2n) {
+  border-bottom: 1px solid #66737C;
+  border-top: 1px solid #66737C;
+}
+
+.team_info_stats .team_info_stats_container .winloss {
+  flex: 0 1 80px;
+}
+
+.team_info_stats .winloss {
+  order: 0;
+}
+
+.team_info_stats .winloss .team_stat {
+  font-size: 20px;
+  min-width: 60px;
+  max-width: 110px;
+  padding: 1px 20%;
+  text-align: left;
+}
+
+.team_info_stats .team_stats {
+  border-right: 1px solid #66737C;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+.team_info_stats .winloss .team_stat .letter {
+  font-size: 12px;
+  width: 20px;
+  line-height: 100%;
+  margin-right: 3px;
+  text-align: center;
+  padding: 6% 0;
+  background: #fff;
+  color: #0B153C;
+}
+
+.team_info_stats .winloss .team_stat span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.team_info_stats .winloss .team_stat abbr {
+  color: #0B153C;
+}
+
+.team_info_stats .winloss .team_stat .stat {
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.team_info_stats .winloss .team_stat.percentage {
+  font-size: 13px;
+  line-height: 100%;
+  padding-top: 5px;
+}
+
+.team_info_stats .place_in_standings {
+  order: 0;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-basis: 200px;
+}
+
+.team_info_stats .stats_container > * {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.team_info_stats .place_in_standings > div {
+  padding: 0 9%;
+  min-width: 100px;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.team_info_stats .place_in_standings .type {
+  font-size: 11px;
+  color: #B3C1CA;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  line-height: 100%;
+}
+
+.team_info_stats .place_in_standings span {
+  display: block;
+}
+
+.team_info_stats .place_in_standings .type abbr {
+  font-size: 11px;
+  color: #B3C1CA;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.team_info_stats .place_in_standings .name {
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.team_info_stats .place_in_standings .standing {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.team_info_stats .place_in_standings .record {
+  font-size: 11px;
+  text-transform: none;
+  color: #B3C1CA;
+  border: none;
+  text-decoration: none;
+}
+
+.team_info_stats .place_in_standings .record abbr {
+  color: #B3C1CA;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.team_info_stats .place_in_standings > div:nth-child(2n) {
+  border-left: 1px solid #66737C;
+  border-right: 1px solid #66737C;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  background: url("http://p1.pichost.me/i/40/1634032.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.75em;
+  text-align: center;
+  color: #8B0000;
+}
+
+.l-header {
+  margin-top: -20px;
+  width: inherit;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.l-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #000;
+  border-radius: 5px;
+  perspective: 1000;
+}
+
+.headerText {
+  padding-top: 30px;
+}
+
+.card {
+  margin: 20px;
+  width: calc(80% / 4);
+  text-align: center;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.card__cont {
+  font-family: "Open Sans", sans-serif;
+}
+.card__cont--top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.card__cont--bottom {
+  padding-right: 10px;
+  padding-left: 10px;
+}
